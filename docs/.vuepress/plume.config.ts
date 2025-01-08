@@ -6,7 +6,8 @@ import { notes } from './notes'
  * @see https://theme-plume.vuejs.press/config/basic/
  */
 export default defineThemeConfig({
-  logo: 'https://theme-plume.vuejs.press/plume.png',
+  logo: '/logo.png',
+  logoDark: '/logo.png',
 
   appearance: true,  // 配置 深色模式
 
@@ -37,12 +38,12 @@ export default defineThemeConfig({
    * @see https://theme-plume.vuejs.press/config/basic/#profile
    */
   profile: {
-    avatar: '/public/logo.svg',
-    name: '文档 - 初桐小栈',
+    avatar: '/logo.svg',
+    name: '初桐小栈',
     description: '初桐小栈的文档库',
-    // circle: true,
-    // location: '',
-     organization: 'HatsuSN 初桐小栈',
+    circle: true,
+    location: 'China',
+    organization: 'HatsuSN 初桐小栈',
   },
 
   navbar,
