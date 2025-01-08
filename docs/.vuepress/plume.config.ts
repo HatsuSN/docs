@@ -30,7 +30,7 @@ export default defineThemeConfig({
   /* 站点页脚 */
    footer: {
      message: 'Power by <a target="_blank" href="https://v2.vuepress.vuejs.org/">VuePress</a> & <a target="_blank" href="https://theme-plume.vuejs.press">vuepress-theme-plume</a>',
-     copyright: 'HatsuSN',
+     copyright: 'Copyright © 2025 HatsuSN初桐小栈',
    },
 
   /**

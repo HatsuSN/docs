@@ -14,7 +14,10 @@ export default defineUserConfig({
   theme: plumeTheme({
     /* 添加您的部署域名, 有助于 SEO, 生成 sitemap */
      hostname: 'https://hatsusn.github.io/docs/',
-
+    /* 导航栏 */
+    navbar: [
+      {logo: '/logo.png', text: '初桐小栈', link: '/'}
+    ]
     /* 文档仓库配置，用于 editLink */
     // docsRepo: '',
     // docsDir: 'docs',
@@ -73,7 +76,7 @@ export default defineUserConfig({
        },
 
       /* 本地搜索, 默认启用 */
-      // search: true,
+      // search:false,
 
       /**
        * Algolia DocSearch
@@ -154,10 +157,10 @@ export default defineUserConfig({
        comment: {
          provider: 'Giscus', // "Artalk" | "Giscus" | "Twikoo" | "Waline"
          comment: true,
-         repo: '',
-         repoId: '',
-         category: '',
-         categoryId: '',
+         repo: 'HatsuSN/docs',
+         repoId: 'R_kgDONnCTkQ',
+         category: 'General',
+         categoryId: 'DIC_kwDONnCTkc4Cl1NI',
          mapping: 'pathname',
          reactionsEnabled: true,
          inputPosition: 'top',

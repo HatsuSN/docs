@@ -7,9 +7,9 @@ config:
     full: true
     background: tint-plate
     hero:
-      name: Theme Plume
-      tagline: VuePress Next Theme
-      text: 一个简约的，功能丰富的 vuepress 文档&博客 主题
+      name: 文档 - 初桐小栈
+      tagline: 微风迎客，软语半茶
+      text: 欢迎来到初桐小栈的文档站点，这里将分享一些学习笔记、心得、经验、教程等内容。
       actions:
         -
           theme: brand
@@ -18,5 +18,5 @@ config:
         -
           theme: alt
           text: Github →
-          link: https://github.com/pengzhanbo/vuepress-theme-plume
+          link: https://github.com/HatsuSN/docs
 ---
