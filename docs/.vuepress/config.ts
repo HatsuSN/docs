@@ -3,7 +3,7 @@ import { defineUserConfig } from 'vuepress'
 import { plumeTheme } from 'vuepress-theme-plume'
 
 export default defineUserConfig({
-  base: '/',
+  base: '/docs/',
   lang: 'zh-CN',
   title: '文档 - 初桐小栈',
   description: '初桐小栈的文档库',
@@ -13,7 +13,7 @@ export default defineUserConfig({
 
   theme: plumeTheme({
     /* 添加您的部署域名, 有助于 SEO, 生成 sitemap */
-    // hostname: 'https://your_site_url',
+     hostname: 'https://hatsusn.github.io/docs/',
 
     /* 文档仓库配置，用于 editLink */
     // docsRepo: '',
@@ -53,24 +53,24 @@ export default defineUserConfig({
      * 为 markdown 文件自动添加 frontmatter 配置
      * @see https://theme-plume.vuejs.press/config/basic/#autofrontmatter
      */
-    // autoFrontmatter: {
-    //   permalink: true,  // 是否生成永久链接
-    //   createTime: true, // 是否生成创建时间
-    //   title: true,      // 是否生成标题
-    // },
+     autoFrontmatter: {
+       permalink: true,  // 是否生成永久链接
+       createTime: true, // 是否生成创建时间
+       title: true,      // 是否生成标题
+     },
 
     plugins: {
       /**
        * Shiki 代码高亮
        * @see https://theme-plume.vuejs.press/config/plugins/code-highlight/
        */
-      // shiki: {
-      //   // 强烈建议预设代码块高亮语言，插件默认加载所有语言会产生不必要的时间开销
-      //   languages: ['shell', 'bash', 'typescript', 'javascript'],
-      //   twoslash: true, // 启用 twoslash
-      //   whitespace: true, // 启用 空格/Tab 高亮
-      //   lineNumbers: true, // 启用行号
-      // },
+       shiki: {
+         // 强烈建议预设代码块高亮语言，插件默认加载所有语言会产生不必要的时间开销
+         languages: ['shell', 'bash', 'typescript', 'javascript'],
+         twoslash: true, // 启用 twoslash
+         whitespace: true, // 启用 空格/Tab 高亮
+         lineNumbers: true, // 启用行号
+       },
 
       /* 本地搜索, 默认启用 */
       // search: true,
@@ -105,11 +105,11 @@ export default defineUserConfig({
        *  markdown power
        * @see https://theme-plume.vuejs.press/config/plugin/markdown-power/
        */
-      // markdownPower: {
+       markdownPower: {
       //   pdf: true,          // 启用 PDF 嵌入 @[pdf](/xxx.pdf)
       //   caniuse: true,      // 启用 caniuse 语法  @[caniuse](feature_name)
       //   plot: true,         // 启用隐秘文本语法 !!xxxx!!
-      //   bilibili: true,     // 启用嵌入 bilibili视频 语法 @[bilibili](bid)
+         bilibili: true,     // 启用嵌入 bilibili视频 语法 @[bilibili](bid)
       //   youtube: true,      // 启用嵌入 youtube视频 语法 @[youtube](video_id)
       //   artPlayer: true,    // 启用嵌入 artPlayer 本地视频 语法 @[artPlayer](url)
       //   audioReader: true,  // 启用嵌入音频朗读功能 语法 @[audioReader](url)
@@ -124,8 +124,8 @@ export default defineUserConfig({
       //     rust: true,       // ::: rust-repl
       //     kotlin: true,     // ::: kotlin-repl
       //   },
-      //   imageSize: 'local', // 启用 自动填充 图片宽高属性，避免页面抖动
-      // },
+         imageSize: 'local', // 启用 自动填充 图片宽高属性，避免页面抖动
+       },
 
       /**
        * 在 Markdown 文件中导入其他 markdown 文件内容。
@@ -137,31 +137,31 @@ export default defineUserConfig({
        * Markdown 数学公式
        * @see https://theme-plume.vuejs.press/config/plugins/markdown-math/
        */
-      // markdownMath: {
-      //   type: 'katex',
-      // },
+       markdownMath: {
+         type: 'katex',
+       },
 
       /**
        * 水印
        * @see https://theme-plume.vuejs.press/guide/features/watermark/
        */
-      // watermark: true,
+       watermark: true,
 
       /**
        * 评论 comments
        * @see https://theme-plume.vuejs.press/guide/features/comments/
        */
-      // comment: {
-      //   provider: '', // "Artalk" | "Giscus" | "Twikoo" | "Waline"
-      //   comment: true,
-      //   repo: '',
-      //   repoId: '',
-      //   category: '',
-      //   categoryId: '',
-      //   mapping: 'pathname',
-      //   reactionsEnabled: true,
-      //   inputPosition: 'top',
-      // },
+       comment: {
+         provider: 'Giscus', // "Artalk" | "Giscus" | "Twikoo" | "Waline"
+         comment: true,
+         repo: '',
+         repoId: '',
+         category: '',
+         categoryId: '',
+         mapping: 'pathname',
+         reactionsEnabled: true,
+         inputPosition: 'top',
+       },
     },
 
     /**
