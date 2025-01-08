@@ -37,7 +37,7 @@ export default defineThemeConfig({
    * @see https://theme-plume.vuejs.press/config/basic/#profile
    */
   profile: {
-    avatar: 'https://theme-plume.vuejs.press/plume.png',
+    avatar: '/public/logo.svg',
     name: '文档 - 初桐小栈',
     description: '初桐小栈的文档库',
     // circle: true,

@@ -7,6 +7,12 @@ export default defineUserConfig({
   lang: 'zh-CN',
   title: '文档 - 初桐小栈',
   description: '初桐小栈的文档库',
+  
+  head: [
+    [
+      'link',{rel:'icon',href:'/logo.svg'}
+    ]
+  ],
 
   bundler: viteBundler(),
   shouldPrefetch: false, // 站点较大，页面数量较多时，不建议启用
@@ -14,7 +20,7 @@ export default defineUserConfig({
   theme: plumeTheme({
     /* 添加您的部署域名, 有助于 SEO, 生成 sitemap */
      hostname: 'https://hatsusn.github.io/docs/',
-    
+     logo: '/logo.svg',
     /* 文档仓库配置，用于 editLink */
     // docsRepo: '',
     // docsDir: 'docs',
